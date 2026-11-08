@@ -1,1 +1,232 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arewa Gallery Films</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #101010;
+  color: white;
+}
+
+header {
+  background: #181818;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d6a52a;
+}
+
+header h1 {
+  color: #e5b83e;
+  font-size: 25px;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  background: #222;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background: linear-gradient(135deg, #29200c, #111);
+}
+
+.hero h2 {
+  color: #e5b83e;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background: #d6a52a;
+  color: black;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+section {
+  padding: 35px 20px;
+}
+
+section h2 {
+  color: #e5b83e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #222;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.card h3 {
+  color: #e5b83e;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+form {
+  max-width: 450px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #292929;
+  color: white;
+}
+
+button {
+  background: #d6a52a;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #181818;
+  text-align: center;
+  padding: 25px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AREWA GALLERY FILMS</h1>
+  <p>Our Stories, Our Culture, Our Identity</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#films">Films</a>
+  <a href="#tv">TV Shows</a>
+  <a href="#podcast">Podcast</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>Welcome to Arewa Gallery Films</h2>
+  <p>
+    Discover authentic African stories,
+    Northern Nigerian culture, films,
+    television programmes and podcasts.
+  </p>
+  <a href="#films" class="btn">Explore Our Platform</a>
+</div>
+
+<section id="films">
+  <h2>Film Production</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Arewa Movies</h3>
+      <p>Discover amazing Northern Nigerian films and stories.</p>
+    </div>
+    <div class="card">
+      <h3>Film Projects</h3>
+      <p>Explore our upcoming film productions and projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tv">
+  <h2>Television Shows</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>TV Programmes</h3>
+      <p>Entertainment, education and cultural programmes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="podcast">
+  <h2>Our Podcasts</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Arewa Podcast</h3>
+      <p>Inspiring conversations, interviews and real-life stories.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Arewa Gallery Films.</p>
+  <p>All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendMessage(event) {
+  event.preventDefault();
+  alert("Thank you for contacting Arewa Gallery Films!");
+}
+</script>
+
+</body>
+</html>
